@@ -2,7 +2,7 @@
   "name": "oku-no-stream.io",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.html",
   "scripts": {
     "test": "npm run lint",
     "start": "node server.js",
