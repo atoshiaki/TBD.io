@@ -11,13 +11,19 @@ const PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Requiring our models for syncing
+var db = require("./models");
+
+// Static directory
+app.use(express.static("public"));
 
 // Routes
 // =============================================================
+require("./routes/api-routes.js")(app);
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname, "public/index.html"));
   });
   
 
@@ -26,3 +32,7 @@ app.get("/", function(req, res) {
 app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
+
+  // Syncing our sequelize models and then starting our Express app
+// =============================================================
+db.seque
