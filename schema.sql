@@ -10,4 +10,7 @@ CREATE TABLE videoId
 	name VARCHAR(30)
     );
     
+
 INSERT INTO videoId (name) VALUES ("hLMjnm1Bm_Y");
+INSERT INTO videoID (name) VALUES ("hLMjnm1Bm_Y");
+
