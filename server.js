@@ -12,14 +12,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Requiring our models for syncing
-var db = require("./models");
+//const db = require("./models");
 
 // Static directory
 app.use(express.static("public"));
 
 // Routes
 // =============================================================
-require("./routes/api-routes.js")(app);
+//require("./routes/api-routes.js")(app);
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
@@ -35,4 +35,4 @@ app.listen(PORT, function() {
 
   // Syncing our sequelize models and then starting our Express app
 // =============================================================
-db.seque
+//db.seque
