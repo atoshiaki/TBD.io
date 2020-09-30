@@ -5,7 +5,7 @@
     "database": "streamer",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "port": 8080
+    "port": 3306
   },
   "test": {
     "username": "root",
@@ -13,7 +13,7 @@
     "database": "test",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "port": 8080
+    "port": 3306
   },
   "production": {
     "use_env_variable": "JAWSDB_URL",
