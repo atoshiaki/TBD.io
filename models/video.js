@@ -1,13 +1,13 @@
 module.exports = function(sequelize, DataTypes) {
-    var Post = sequelize.define("Post", {
+    var Video = sequelize.define("Video", {
       name: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
-          len: [1]
+          len: [1,140]
         }
       },
     });
-    return Post;
+    return Video;
   };
   

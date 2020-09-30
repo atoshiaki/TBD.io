@@ -12,14 +12,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Requiring our models for syncing
-//const db = require("./models");
+const db = require("./models");
 
 // Static directory
 app.use(express.static("public"));
 
 // Routes
 // =============================================================
-//require("./routes/api-routes.js")(app);
+require("./routes/api-routes.js")(app);
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function(req, res) {
@@ -29,10 +29,11 @@ app.get("/", function(req, res) {
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-  });
 
   // Syncing our sequelize models and then starting our Express app
 // =============================================================
-//db.seque
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
+});
