@@ -164,8 +164,8 @@ onYouTubeIframeAPIReady();
 
 function onYouTubeIframeAPIReady() {
 player = new YT.Player('player', {
-    height: '390',
-    width: '640',
+    height: '290',
+    width: '440',
     videoId: '4q3mF9ZLGNM',
     events: {
     'onReady': onPlayerReady,
@@ -173,8 +173,8 @@ player = new YT.Player('player', {
     }
 });
 player = new YT.Player('player2', {
-    height: '390',
-    width: '640',
+    height: '290',
+    width: '440',
     videoId: '9r-pPADtXuc',
     events: {
     'onReady': onPlayerReady,
@@ -182,8 +182,8 @@ player = new YT.Player('player2', {
     }
 });
 player = new YT.Player('player3', {
-    height: '390',
-    width: '640',
+    height: '290',
+    width: '440',
     videoId: 'hLMjnm1Bm_Y',
     events: {
     'onReady': onPlayerReady,
