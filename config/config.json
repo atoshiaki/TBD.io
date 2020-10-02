@@ -1,22 +1,24 @@
 {
   "development": {
     "username": "root",
-    "password": "password",
-    "database": "streamer",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "port": 3306
+    "password": "243866be.",
+    "database": "videolist",
+    "host": "localhost",
+    "port": 3306,
+    "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "password",
-    "database": "test",
+    "password": null,
+    "database": "database_test",
     "host": "127.0.0.1",
-    "dialect": "mysql",
-    "port": 3306
+    "dialect": "mysql"
   },
   "production": {
-    "use_env_variable": "JAWSDB_URL",
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   }
 }
