@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "243866be.",
+    "password": "password",
     "database": "videolist",
     "host": "localhost",
     "port": 3306,
