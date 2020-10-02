@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run lint",
     "start": "node server.js",
     "watch": "nodemon server.js"
   },
@@ -12,8 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3",
-    "mysql2": "^1.6.4",
-    "sequelize": "^4.41.2"
+    "express": "^4.17.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.22.3",
+    "bcryptjs": "^2.4.3"
   }
 }
