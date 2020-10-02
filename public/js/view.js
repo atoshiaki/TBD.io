@@ -158,7 +158,7 @@ var embed = new Twitch.Embed("twitch-embed", {
   layout: "video",
   autoplay: false,
   // only needed if your site is also embedded on embed.example.com and othersite.example.com 
-  parent: ["https://oku-no-stream.herokuapp.com/"]
+  parent: ["oku-no-stream.herokuapp.com"]
 });
 
 embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
