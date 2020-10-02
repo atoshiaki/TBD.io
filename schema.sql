@@ -1,13 +1,13 @@
 -- Drops the blogger if it exists currently --
-DROP DATABASE IF EXISTS streamer;
+DROP DATABASE IF EXISTS streamlist;
 -- Creates the "blogger" database --
-CREATE DATABASE streamer;
+CREATE DATABASE streamlist;
 
-USE streamer;
+USE streamlist;
 
-CREATE TABLE videoId
+CREATE TABLE streams
 (
-	name VARCHAR(30)
+	id VARCHAR(30)
     );
     
-INSERT INTO videoId (name) VALUES ("hLMjnm1Bm_Y");
+INSERT INTO streams (id) VALUES ("hLMjnm1Bm_Y");
