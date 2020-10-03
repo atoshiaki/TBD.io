@@ -113,7 +113,7 @@ $(document).ready(function(){
   function createNewRow(video) {
     var $newInputRow = $(
       [
-        "<li class='list-group-item video-item'>",
+        "<li class='list-group-item video-item'>", "Videoid: ",
         "<span>",
         video.text,
         "</span>",
