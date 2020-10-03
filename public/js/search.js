@@ -39,7 +39,9 @@ $(document).ready(function(){
   function createResult(video) {
     var $newInputRow = $(
       [
+        "<li>",
         "<img src='"+ video +"'id='currentIcon'>",
+        "</li>"
       ].join("")
     );
     console.log($newInputRow)

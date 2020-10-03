@@ -5,14 +5,42 @@
 	<meta charset="UTF-8">
 	<title>Video - Express</title>
 	<!-- Latest compiled and minified CSS & JS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/lumen/bootstrap.min.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="stylesheets/style.css" media="screen" title="no title">
+	<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+	integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+	crossorigin="anonymous"
+  />
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="https://embed.twitch.tv/embed/v1.js"></script>
 </head>
 
 <body>
+	<header>
+        <nav class="navbar">
+            <a class="navbar-brand">
+                <i class="fas fa-cloud-sun-rain"></i>
+                oku-no stream
+            </a>
+        </nav>
+    </header>
+
+	<!--Search side navigation-->
+    <div class="sidenav">
+		<form class="form-inline mr-auto">
+			<input class="form-control mr-sm-2" id="searchInput" type="text" placeholder="City,State" aria-label="Search">
+			<button class="btn btn-secondary btn-rounded btn-sm my-0" id="searchBtn" type="submit">Search</button>
+		</form>
+		<!--List of results-->
+			<div class = "results-container" >
+			
+			</div>
+	</div> 
+
+	<!--Live Video container-->
+	<div class = "main">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6 offset-md-3">
@@ -30,21 +58,16 @@
                 </div>
               </div>
 						</form>
-					</li>
+
 					<span class="video-container">
 					</span>
-				</ul>
+
 			</div>
+				<!-- Add a placeholder for the Twitch embed -->
+			<div id="twitch-embed"></div>
 		</div>
 	</div>
-
-	<!-- Add a placeholder for the Twitch embed -->
-	<div id="twitch-embed"></div>
-
-	<div class = "results-container" >
-			
-	</div>
-
+</div>
 
 	<!-- Custom Script -->
 	<script src="js/view.js" type="text/javascript"></script>
