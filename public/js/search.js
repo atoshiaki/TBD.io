@@ -43,7 +43,9 @@ $(document).ready(function(){
         "<div class='card' style='width: 10rem; height:10rem'>",
         "<img class='card-img-top' src='"+ video +"'id='currentIcon'>",
         "<div class='card-body'>",
+        
         "<button type='button' class='add btn btn-primary btn-sm'>Add Video</button>",
+
         "</div>",
         "</div>",
         "</li>"
