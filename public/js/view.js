@@ -118,6 +118,7 @@ $(document).ready(function(){
         video.text,
         "</span>",
         "<input type='text' class='edit' style='display: none;'>",
+        "<iframe width='560' height='315' src='https://www.youtube.com/embed/" + video.text + "' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
         "<button class='delete btn btn-danger'> Delete </button>",
         "<button class='complete btn btn-primary'> Watched </button>",
         "</li>"
