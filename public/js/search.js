@@ -6,8 +6,8 @@ $(document).ready(function(){
   //API key for YouTube
   var API_KEY = "AIzaSyAQmv6tfX2O--XdCmHzgIP-RJ_KcoMUjxA";
 
-  $("#addVideo").on("click", function(){
-    var $searchInput = $("input.new-item").val();
+  $("#searchBtn").on("click", function(){
+    var $searchInput = $("#searchInput").val();
     runSearch(API_KEY,$searchInput)
   });
 
