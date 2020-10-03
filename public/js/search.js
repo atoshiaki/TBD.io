@@ -21,6 +21,8 @@ $(document).ready(function(){
     $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxresults=2&q=" + search + "&eventType=live",
       function(data){
         console.log(data.items);
+        window.localStorage.setItem("apiJSON",JSON.stringify(data.items));
+        console.log(JSON.parse(window.localStorage.getItem("apiJSON")));
         showResults(data.items);
       });
   }
