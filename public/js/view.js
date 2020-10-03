@@ -118,8 +118,8 @@ $(document).ready(function(){
         video.text,
         "</span>",
         "<input type='text' class='edit' style='display: none;'>",
-        "<button class='delete btn btn-danger'>x</button>",
-        "<button class='complete btn btn-primary'>✓</button>",
+        "<button class='delete btn btn-danger'> Delete </button>",
+        "<button class='complete btn btn-primary'> Watched </button>",
         "</li>"
       ].join("")
     );
