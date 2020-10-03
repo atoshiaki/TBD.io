@@ -40,7 +40,12 @@ $(document).ready(function(){
     var $newInputRow = $(
       [
         "<li>",
-        "<img src='"+ video +"'id='currentIcon'>",
+        "<div class='card' style='width: 10rem; height:10rem'>",
+        "<img class='card-img-top' src='"+ video +"'id='currentIcon'>",
+        "<div class='card-body'>",
+        "<button type='button' class='btn btn-primary btn-sm'>Add Video</button>",
+        "</div>",
+        "</div>",
         "</li>"
       ].join("")
     );
