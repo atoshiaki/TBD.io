@@ -1,4 +1,4 @@
--- Drops the todolist if it exists currently --
+-- Drops the videolist if it exists currently --
 DROP DATABASE IF EXISTS videolist;
--- Creates the "todolist" database --
+-- Creates the "videolist" database --
 CREATE DATABASE videolist;
