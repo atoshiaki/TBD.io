@@ -17,3 +17,11 @@ form.login {
   margin-left: 450px;
   margin-top: 30px;
 }
+
+.btn-danger {
+  margin-left: 5px;
+}
+
+.btn-primary {
+  margin-left: 5px;
+}
