@@ -4,7 +4,7 @@ $(document).ready(function(){
   var $resultsContainer = $(".results-container");
   //also make a variable to pull search input
   //API key for YouTube
-  var API_KEY = "AIzaSyAQmv6tfX2O--XdCmHzgIP-RJ_KcoMUjxA";
+  var API_KEY = "AIzaSyBkaklewYyhrjvu2qiNiDCyLNkBaiy_LV4";
 
   $("#searchBtn").on("click", function(){
     var $searchInput = $("#searchInput").val();
@@ -18,7 +18,7 @@ $(document).ready(function(){
   //Thhis function runs the YouTube search
   function runSearch(key,search){
     console.log(search);
-    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxresults=10&q=" + search + "&eventType=live",
+    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxresults=2&q=" + search + "&eventType=live",
       function(data){
         console.log(data.items);
         showResults(data.items);
@@ -43,13 +43,12 @@ $(document).ready(function(){
         "<div class='card' style='width: 10rem; height:10rem'>",
         "<img class='card-img-top' src='"+ video +"'id='currentIcon'>",
         "<div class='card-body'>",
-        "<button type='button' class='btn btn-primary btn-sm'>Add Video</button>",
+        "<button type='button' class='add btn btn-primary btn-sm'>Add Video</button>",
         "</div>",
         "</div>",
         "</li>"
       ].join("")
     );
-    console.log($newInputRow)
     return $newInputRow;
   }
  

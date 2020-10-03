@@ -24,7 +24,7 @@ $(document).ready(function(){
   $(document).on("click", ".video-item", editVideo);
   $(document).on("keyup", ".video-item", finishEdit);
   $(document).on("blur", ".video-item", cancelEdit);
-  $(document).on("submit", "#video-form", insertVideo);
+  $(document).on("click", "button.add", insertVideo);
 
   // Our initial videos array
   var videos = [];
@@ -136,6 +136,7 @@ $(document).ready(function(){
   // This function inserts a new video into our database and then updates the view
   function insertVideo(event) {
     event.preventDefault();
+    console.log(event)
     var video = {
       text: $newItemInput.val().trim(),
       complete: false
