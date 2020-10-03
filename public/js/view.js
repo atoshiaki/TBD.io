@@ -135,9 +135,10 @@ $(document).ready(function(){
 
   // This function inserts a new video into our database and then updates the view
   function insertVideo(event) {
+    console.log(event.target.id)
     event.preventDefault();
     var video = {
-      text: $newItemInput.val().trim(),
+      text: event.target.id,
       complete: false
     };
 
