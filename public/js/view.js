@@ -24,7 +24,7 @@ $(document).ready(function(){
   $(document).on("click", ".video-item", editVideo);
   $(document).on("keyup", ".video-item", finishEdit);
   $(document).on("blur", ".video-item", cancelEdit);
-  $(document).on("submit", "#video-form", insertVideo);
+  $(document).on("click", "button.add", insertVideo);
 
   // Our initial videos array
   var videos = [];
