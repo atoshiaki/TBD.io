@@ -7,7 +7,7 @@ $(document).ready(function(){
     //event listener for search button click
     $("#searchBtn").on("click",function(event){
         event.preventDefault();
-        window.localStorage.setItem("movieSearch",JSON.stringify($("#searchInput").val()));
+        window.localStorage.setItem("movieSearch",JSON.stringify($("#srcInput").val()));
         console.log(localStorage.getItem("movieSearch"))
     })
 
