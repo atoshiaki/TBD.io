@@ -18,49 +18,49 @@
 	<script src="https://embed.twitch.tv/embed/v1.js"></script>
 </head>
 
-<body>
+<body class="navbar bg-blue-800">
 	<header>
         <nav class="navbar">
-            <a class="navbar-brand">
-                <i class="fas"></i>
+            <a class="navbar-brand bg-blue-800 .text-blue-100">
+                <i class="fas bg-blue-200"></i>
                 oku-no stream
             </a>
         </nav>
     </header>
 
 	<!--Search side navigation-->
-    <div class="sidenav">
-		<form class="form-inline mr-auto">
+    <div class="sidenav bg-blue-200">
+		<form class="form-inline mr-auto bg-blue-900">
 			<input class="form-control mr-sm-2" id="searchInput" type="text" placeholder="Video Search" aria-label="Search">
-			<button class="btn btn-secondary btn-rounded btn-sm my-0" id="searchBtn" type="submit">Search</button>
+			<button class="hover:bg-blue-400 bg-blue-200 btn btn-secondary btn-rounded btn-sm my-0 .text-blue-100" id="searchBtn" type="submit italic">Search</button>
 		</form>
 		<!--List of results-->
-			<ul class = "list-group results-container" >
+			<ul class = "list-group results-container bg-blue-900" >
 			
 			</ul>
 	</div> 
 
 	<!--Live Video container-->
-	<div class = "main">
+	<div class ="main bg-blue-800">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-6 offset-md-3">
+		<div class="flex-row sm:flex-col md:flex-row-reverse lg:flex-col-reverse xl:flex-row">
+			<div class="flex-row sm:flex-col md:flex-row-reverse lg:flex-col-reverse xl:flex-row">
 				<ul class="list-group video-list">
-					<li class="list-group-item new-item">
+					<li class="bg-blue-100 list-group-item new-item">
 						<form id="video-form">
               <div class="container">
-                <div class="row">
-                  <div class="col-10">
+                <div class="flex-row sm:flex-col md:flex-row-reverse lg:flex-col-reverse xl:flex-row">
+                  <div class="flex-row sm:flex-col md:flex-row-reverse lg:flex-col-reverse xl:flex-row bg-blue-100">
                     <input id = "srcInput" class="new-item form-control" placeholder="Add a video" type="text" />
                   </div>
-                  <div class="col-2">
-                    <button type="submit" class="btn btn-success" id="addVideo">Add Video</button>
+                  <div class="flex-row sm:flex-col md:flex-row-reverse lg:flex-col-reverse xl:flex-row">
+                    <button type="submit" class="bg-blue-200 hover:bg-blue-300 btn btn-success" id="addVideo">Add Video</button>
                   </div>
                 </div>
               </div>
 						</form>
 
-					<span class="video-container">
+					<span class="video-container mx-auto">
 					</span>
 
 			</div>
