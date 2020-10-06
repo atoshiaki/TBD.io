@@ -4,7 +4,7 @@ $(document).ready(function(){
   var $resultsContainer = $(".results-container");
   //also make a variable to pull search input
   //API key for YouTube
-  var API_KEY = "AIzaSyBrlDzpjpap5cNWum1R22iXhz5GkjpAoBI";
+  var API_KEY = "AIzaSyAQmv6tfX2O--XdCmHzgIP-RJ_KcoMUjxA";
   //anthonys key
   //AIzaSyAQmv6tfX2O--XdCmHzgIP-RJ_KcoMUjxA
   //korys first key
@@ -22,7 +22,7 @@ $(document).ready(function(){
   //Thhis function runs the YouTube search
   function runSearch(key,search){
     console.log(search);
-    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=1&q=" + search + "&eventType=live",
+    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=5&q=" + search + "&eventType=live",
       function(data){
         console.log(data.items);
         window.localStorage.setItem("apiJSON",JSON.stringify(data.items));
