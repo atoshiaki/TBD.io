@@ -4,7 +4,7 @@ $(document).ready(function(){
   var $resultsContainer = $(".results-container");
   //also make a variable to pull search input
   //API key for YouTube
-  var API_KEY = "AIzaSyAQmv6tfX2O--XdCmHzgIP-RJ_KcoMUjxA";
+  var API_KEY = "AIzaSyC5_QLjRvtoYgKF7ZMSFrs4MJgWf5Bo4qM";
   //anthonys key
   //AIzaSyAQmv6tfX2O--XdCmHzgIP-RJ_KcoMUjxA
   //korys first key
