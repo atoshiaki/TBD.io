@@ -22,7 +22,7 @@ $(document).ready(function(){
   //Thhis function runs the YouTube search
   function runSearch(key,search){
     console.log(search);
-    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=5&q=" + search + "&eventType=live",
+    $.get("https://www.googleapis.com/youtube/v3/search?key=" + key + "&type=video&part=snippet&maxResults=1&q=" + search + "&eventType=live",
       function(data){
         console.log(data.items);
         window.localStorage.setItem("apiJSON",JSON.stringify(data.items));
