@@ -156,7 +156,7 @@ $(document).ready(function(){
 var embed = new Twitch.Embed("twitch-embed", {
   width: 854,
   height: 480,
-  channel: "TheGrefg",
+  channel: "evil_tosh",
   layout: "video",
   autoplay: false,
   // only needed if your site is also embedded on embed.example.com and othersite.example.com 
