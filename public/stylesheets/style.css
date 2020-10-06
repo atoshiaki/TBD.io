@@ -3,11 +3,6 @@ form.login {
   margin-top: 50px;
 }
 
-.bg-yellow-300 {
-  --bg-opacity: 3;
-  background-color: #ecc94b;
-  background-color: rgba(236, 201, 75, var(--bg-opacity));
-
 #player {
   margin-left: 450px;
   margin-top: 30px;
