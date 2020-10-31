@@ -10,5 +10,12 @@ In this app, user can search any live video from the search area. When user inse
 
 
 
+Deployed Link: https://oku-no-stream.herokuapp.com/
+
+
+
+
+
+
 
 ![project-img](https://user-images.githubusercontent.com/60679626/95669208-cf5a3d00-0b32-11eb-893a-ed15534a25dc.PNG)
